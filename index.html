@@ -4,18 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Conversor de binário para decimal</title>
 </head>
 <body>
     <main>
         <section id="sectionConversor">
-            <form action="">
+            <form action="" id="conversor">
                 <label for-id="entradaInput">Digite um valor em binário:</label>
-                <input id="entradaInput" type="text" placeholder="Digite o valor em binário">
-                <button onclick="converteValorBinario()">Converter</button>
+                <input id="entradaInput" type="text" placeholder="Digite o valor em binário" oninput="converteValorBinario()">                
                 <label for-id="saidaDecimal">Valor em decimal:</label>
-                <input id="saidaDecimal" type="text" placeholder="Valor em decimal" readonly>
-                
+                <input id="saidaDecimal" type="text" placeholder="Valor em decimal" readonly>  
             </form>
         </section>
 </main>
